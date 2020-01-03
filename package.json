@@ -6,7 +6,9 @@
     "lerna": "lerna",
     "bootstrap": "lerna bootstrap",
     "dev": "lerna run build --stream --parallel",
-    "lerna:version": "lerna version"
+    "lerna:version": "lerna version",
+    "prepublish": "lerna run prepublish",
+    "lerna:publish": "lerna publish from-git --yes --npm-tag beta"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
