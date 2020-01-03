@@ -6,7 +6,7 @@
     "lerna": "lerna",
     "bootstrap": "lerna bootstrap",
     "dev": "lerna run build --stream --parallel",
-    "lerna:version": "lerna version prerelease --preid beta && npm run lerna:postversion",
+    "lerna:version": "lerna version --conventional-commits --create-release github",
     "lerna:postversion": "git add CHANGELOG.md && git commit -m \"Update: changelog\" && git push --follow-tags"
   },
   "devDependencies": {
