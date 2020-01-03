@@ -6,8 +6,7 @@
     "lerna": "lerna",
     "bootstrap": "lerna bootstrap",
     "dev": "lerna run build --stream --parallel",
-    
-    "lerna:version": "lerna version --conventional-commits --create-release github"
+    "lerna:version": "lerna version"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
