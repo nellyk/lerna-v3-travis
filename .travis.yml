@@ -13,6 +13,7 @@ jobs:
           on:
             branch: master
             tags: true
-            provider: script
-            script: "npm run lerna:publish"
-            skip_cleanup: true 
+          provider: script
+          skip_cleanup: true 
+          script:
+            - npm run lerna:publish
