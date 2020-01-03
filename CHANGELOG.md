@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/nellyk/lerna-v3-travis/compare/v1.6.0...v1.7.0) (2020-01-03)
+
+
+### Features
+
+* **release:** fix travis build ([49cce37](https://github.com/nellyk/lerna-v3-travis/commit/49cce37107bdc41718652d905f05590f886e86d9))
+* **release:** fix travis build ([036e422](https://github.com/nellyk/lerna-v3-travis/commit/036e422ee0839cc112b27c7c3fec8feef60fd72e))
+
+
+
+
+
 # [1.6.0](https://github.com/nellyk/lerna-v3-travis/compare/v1.5.0...v1.6.0) (2020-01-03)
 
 
