@@ -1,5 +1,5 @@
 {
-  "name": "lerna-test-2",
+  "name": "lerna-test-23456",
   "version": "1.3.0",
   "description": "",
   "main": "index.js",
@@ -7,5 +7,6 @@
     "test": "exit 0"
   },
   "author": "nelly",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "a94a3a5051522dcb59173544a245301ab7372ff8"
 }
