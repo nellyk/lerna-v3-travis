@@ -6,10 +6,10 @@ jobs:
    include:
     # Define the release stage that publishes lerna to npm
     - stage: release
-        node_js:
-          - 10
-          - 12
-        deploy:
+      node_js:
+       - 10
+       - 12
+      deploy:
           on:
             branch: master
             tags: true
