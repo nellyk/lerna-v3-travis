@@ -1,9 +1,5 @@
   
 language: node_js
-jobs:
-   include:
-    # Define the release stage that publishes lerna to npm
-    - stage: release
        cache:
         directories:
         - node_modules
