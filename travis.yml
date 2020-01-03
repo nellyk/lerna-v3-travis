@@ -1,8 +1,19 @@
   
 language: node_js
-node_js:
-  - "10"
-  - "12"
 cache:
   directories:
   - node_modules
+jobs:
+   include:
+    # Define the release stage that publishes lerna to npm
+    - stage: release
+        node_js:
+          - 10
+          - 12
+        deploy:
+          on:
+            branch: master
+            tags: true
+            provider: script
+            script: "npm run lerna:publish"
+            skip_cleanup: true
