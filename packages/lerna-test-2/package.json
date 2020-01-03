@@ -1,7 +1,7 @@
 {
   "name": "lerna-test-23456",
   "version": "1.6.0",
-  "description": "",
+  "description": "test package for lerna",
   "main": "index.js",
   "scripts": {
     "test": "exit 0"
