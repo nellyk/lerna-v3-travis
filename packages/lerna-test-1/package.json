@@ -1,5 +1,5 @@
 {
-  "name": "lerna-test-1234567",
+  "name": "lerna-test-travis-package-1",
   "version": "1.9.0",
   "description": "test package for lerna testing using travis",
   "main": "index.js",

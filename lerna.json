@@ -2,10 +2,16 @@
   "packages": [
     "packages/*"
   ],
-  "command": {
-    "version": {
-      "conventionalCommits": true,
-      "allowBranch": "master"
+  "changelog": {
+    "repo": "nellyk/lerna-v3-travis",
+    "cacheDir": ".changelog",
+    "labels": {
+      "breaking :boom:": ":boom: Breaking Change",
+      "feature :rocket:": ":rocket: New Feature",
+      "bug :bug:": ":bug: Bug Fix",
+      "docs :memo:": ":memo: Documentation",
+      "chore :broom:": ":broom: Chore"
+
     }
   },
   "version": "1.9.0"

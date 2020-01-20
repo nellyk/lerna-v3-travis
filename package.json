@@ -7,9 +7,11 @@
     "bootstrap": "lerna bootstrap",
     "dev": "lerna run build --stream --parallel",
     "lerna:version": "lerna version",
-    "lerna:publish": "lerna publish from-git --yes"
+    "lerna:publish": "lerna publish from-git --yes",
+    "lerna:changelog":"lerna-changelog"
   },
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.20.2",
+    "lerna-changelog": "^1.0.0"
   }
 }
