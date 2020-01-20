@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/nellyk/lerna-v3-travis/compare/v1.8.0...v1.9.0) (2020-01-20)
+
+
+### Features
+
+* **license:**  add license ([106c50a](https://github.com/nellyk/lerna-v3-travis/commit/106c50a8eb93692422acb79e6bd91dcbbe6feb89))
+* **license:** update license to MIT ([74e0f99](https://github.com/nellyk/lerna-v3-travis/commit/74e0f99760c76acd1c851b98a2081cfa91d89fbb))
+
+
+
+
+
 # [1.8.0](https://github.com/nellyk/lerna-v3-travis/compare/v1.7.0...v1.8.0) (2020-01-03)
 
 
