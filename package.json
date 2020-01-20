@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "lerna-v3-travis",
   "private": true,
   "scripts": {
     "test": "exit 0",
