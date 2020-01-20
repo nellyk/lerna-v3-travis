@@ -11,8 +11,7 @@
       "bug :bug:": ":bug: Bug Fix",
       "docs :memo:": ":memo: Documentation",
       "chore :broom:": ":broom: Chore"
-
     }
   },
-  "version": "1.9.0"
+  "version": "1.9.1"
 }
