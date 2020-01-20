@@ -7,6 +7,6 @@
     "test": "exit 0"
   },
   "author": "nelly kiboi",
-  "license": "ISC",
+  "license": "MIT",
   "gitHead": "1a81fcd7c87073361fe3e74fa0b3f4ad02857ecb"
 }
