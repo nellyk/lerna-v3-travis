@@ -7,7 +7,6 @@ script: |-
   echo $'**Change log:**<br/>'${log//$'\n'/<br/>}
 before_deploy: |-
   log=$(git log $TRAVIS_COMMIT_RANGE --oneline)
-  export TAG=$'v'$TRAVIS_COMMIT_MESSAGE
   export BODY=$'**Change log:**<br/>'${log//$'\n'/<br/>}
   echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null  
 jobs:
@@ -17,8 +16,6 @@ jobs:
       node_js:
        - 10
        - 12
-      tag_name: $TAG
-      body: $BODY 
       deploy:
           on:
             branch: master
