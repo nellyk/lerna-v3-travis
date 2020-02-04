@@ -1,12 +1,12 @@
 {
   "name": "lerna-test-travis-package-2",
-  "version": "1.9.8",
+  "version": "1.9.9",
   "description": "Test package for lerna testing using travis",
   "main": "index.js",
   "scripts": {
     "test": "exit 0"
   },
-  "author": "nelly kiboi",
+  "author": "nelly k",
   "license": "Apache-2.0",
   "gitHead": "1a81fcd7c87073361fe3e74fa0b3f4ad02857ecb"
 }
