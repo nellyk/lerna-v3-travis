@@ -2,16 +2,10 @@
   "packages": [
     "packages/*"
   ],
-  "changelog": {
-    "repo": "lerna-v3-travis",
-    "cacheDir": ".changelog",
-    "labels": {
-      "breaking :boom:": ":boom: Breaking Change",
-      "feature :rocket:": ":rocket: New Feature",
-      "bug :bug:": ":bug: Bug Fix",
-      "docs :memo:": ":memo: Documentation",
-      "chore :broom:": ":broom: Chore"
+  "command": {
+    "version": {
+      "conventionalCommits": true
     }
   },
-  "version": "1.9.7"
+  "version": "1.9.8"
 }
