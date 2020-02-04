@@ -1,12 +1,12 @@
 {
   "name": "lerna-test-travis-package-1",
-  "version": "1.9.6",
+  "version": "1.9.7",
   "description": "Test package for lerna testing using travis and lerna-changelog",
   "main": "index.js",
   "scripts": {
     "test": "exit 0"
   },
-  "author": "ngk",
+  "author": "nelly",
   "license": "MIT",
   "gitHead": "1a81fcd7c87073361fe3e74fa0b3f4ad02857ecb"
 }
