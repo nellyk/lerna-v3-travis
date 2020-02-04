@@ -3,7 +3,7 @@
     "packages/*"
   ],
   "changelog": {
-    "repo": "nellyk/lerna-v3-travis",
+    "repo": "lerna-v3-travis",
     "cacheDir": ".changelog",
     "labels": {
       "breaking :boom:": ":boom: Breaking Change",
