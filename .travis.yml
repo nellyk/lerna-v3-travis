@@ -4,10 +4,8 @@ cache:
   - node_modules 
 script: |-
   log=$(git log $TRAVIS_COMMIT_RANGE --oneline)
-  echo $'**Change log:**<br/>'${log//$'\n'/<br/>}
 before_deploy: |-
   log=$(git log $TRAVIS_COMMIT_RANGE --oneline)
-  export BODY=$'**Change log:**<br/>'${log//$'\n'/<br/>}
   echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null  
 jobs:
    include:
