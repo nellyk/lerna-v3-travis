@@ -3,6 +3,7 @@ cache:
   directories:
   - node_modules 
 before_deploy: |-
+  log=$(git log $TRAVIS_COMMIT_RANGE --oneline)
   echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null  
 jobs:
    include:
