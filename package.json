@@ -8,7 +8,8 @@
     "dev": "lerna run build --stream --parallel",
     "lerna:version": "lerna version",
     "lerna:publish": "lerna publish from-package --yes",
-    "lerna:changelog":"lerna-changelog"
+    "lerna:changelog":"lerna-changelog",
+    "check-version":"node ./check-version"
   },
   "devDependencies": {
     "lerna": "^3.20.2",
