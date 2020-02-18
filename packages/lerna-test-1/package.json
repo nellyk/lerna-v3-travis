@@ -1,6 +1,6 @@
 {
   "name": "lerna-test-travis-package-1",
-  "version": "1.9.11",
+  "version": "1.9.14",
   "description": "Test package for lerna testing using travis and lerna-changelog",
   "main": "index.js",
   "scripts": {
