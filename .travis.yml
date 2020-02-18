@@ -1,4 +1,7 @@
 language: node_js
+node_js:
+  - 10
+  - 12
 cache:
   directories:
   - node_modules 
@@ -8,15 +11,11 @@ jobs:
    include:
     # Define the release stage that publishes lerna to npm
     - stage: release
-      node_js:
-       - 10
-       - 12
+      if: (tag =~ /^v/) AND (commit-message =~ /^chore\(release\)/)  
       deploy:
           on:
             branch: master
-            env:
-            - TRAVIS_COMMIT_MESSAGE = $TRAVIS_COMMIT_MESSAGE
           provider: script
           skip_cleanup: true 
           script:
-           - npm run check-version         
+           - npm run lerna:publish         
