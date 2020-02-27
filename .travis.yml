@@ -7,6 +7,8 @@ cache:
   - node_modules
 before_deploy:
   echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+  echo $TRAVIS_COMMIT_MESSAGE
+  export TAG=$'v'$TRAVIS_COMMIT_MESSAGE
 jobs:
   include:
     # Define the release stage that publishes lerna to npm
@@ -17,4 +19,4 @@ jobs:
           provider: script
           skip_cleanup: true
           script:
-           - npm run lerna:deploy --$TRAVIS_COMMIT_MESSAGE
+           - npm run lerna:deploy -- $TRAVIS_COMMIT_MESSAGE
