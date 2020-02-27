@@ -9,7 +9,7 @@
     "lerna:version": "lerna version",
     "lerna:publish": "lerna publish from-package --yes",
     "lerna:changelog":"lerna-changelog",
-    "check-version":"node ./check-version"
+    "lerna:deploy":"node lernaDeploy.js"
   },
   "devDependencies": {
     "lerna": "^3.20.2",
