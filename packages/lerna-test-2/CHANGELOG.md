@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.15](https://github.com/nellyk/lerna-v3-travis/compare/v1.9.14...v1.9.15) (2020-02-27)
+
+**Note:** Version bump only for package lerna-test-travis-package-2
+
+
+
+
+
 ## [1.9.14](https://github.com/nellyk/lerna-v3-travis/compare/v1.9.13...v1.9.14) (2020-02-18)
 
 **Note:** Version bump only for package lerna-test-travis-package-2
