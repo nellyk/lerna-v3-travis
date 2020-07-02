@@ -24,7 +24,12 @@ jobs:
         with:
           node-version: '12'
       - run: NODE_ENV=development npm ci
-      - run: npm run lerna:version
+      - name: versioning
+        run: |
+          NODE_ENV=development npm ci
+          git config --local user.email "nellyk@noreply.github.com"
+          git config --local user.name "nellyk"
+          npm run lerna:version      
       - name: Lerna release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
