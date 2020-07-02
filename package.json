@@ -6,7 +6,7 @@
     "lerna": "lerna",
     "bootstrap": "lerna bootstrap",
     "dev": "lerna run build --stream --parallel",
-    "lerna:version": "lerna version --yes",
+    "lerna:version": "lerna version --yes  --conventional-commits --create-release github",
     "lerna:publish": "lerna publish from-package --yes",
     "lerna:changelog":"lerna-changelog",
     "lerna:deploy":"node lernaDeploy.js"
