@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/nellyk/lerna-v3-travis/compare/lerna-test-travis-package-1@1.10.1...lerna-test-travis-package-1@1.11.0) (2020-07-02)
+
+
+### Features
+
+* **testing:** testing release ([914bb70](https://github.com/nellyk/lerna-v3-travis/commit/914bb70af5db409fd297b411e69a9d0e4e852768))
+
+
+
+
+
 ## [1.10.1](https://github.com/nellyk/lerna-v3-travis/compare/lerna-test-travis-package-1@1.10.0...lerna-test-travis-package-1@1.10.1) (2020-07-02)
 
 **Note:** Version bump only for package lerna-test-travis-package-1
