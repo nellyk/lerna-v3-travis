@@ -1,6 +1,6 @@
 {
   "name": "lerna-test-travis-package-2",
-  "version": "1.10.12",
+  "version": "1.10.13",
   "description": "Tet package for lerna testing using travis",
   "main": "index.js",
   "scripts": {
