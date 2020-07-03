@@ -27,7 +27,7 @@ jobs:
         run: |
           NODE_ENV=development npm ci
           git config --local user.email "one.amex@aexp.com"
-          git config --local user.name "nellyk"
+          git config --local user.name "OneAmexBot"
           npm run lerna:version 
       - name: Create release pull request
         uses: peter-evans/create-pull-request@v2
