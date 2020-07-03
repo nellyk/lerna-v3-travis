@@ -5,29 +5,30 @@ on:
   repository_dispatch:
     types: [prepare-release-command]
 jobs:
-  one-app-release-pull-request:
+  prepare:
+    runs-on: ubuntu-latest
+    if: "! contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - run: echo "${{ github.event.head_commit.message }}"
+  release:
+    needs: prepare
+    name: Publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: git fetch --prune --unshallow
-      - uses: actions/cache@v1
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - uses: actions/setup-node@v1
+          persist-credentials: false
+      - name: Setup node
+        uses: actions/setup-node@v1
         with:
-          node-version: 12.x
-      - name: One App release
-        id: vars
+          node-version: '12'
+      - run: NODE_ENV=development npm ci
+      - name: versioning
         run: |
           NODE_ENV=development npm ci
-          git config --local user.email "one.amex@aexp.com"
-          git config --local user.name "OneAmexBot"
-          npm run release
-          git add .
-          git commit -m "docs(changelog): update"
+          git config --local user.email "nellyk@noreply.github.com"
+          git config --local user.name "nellyk"
+          npm run lerna:version 
       - name: Create release pull request
         uses: peter-evans/create-pull-request@v2
         with:
