@@ -1,18 +1,9 @@
 name: Release
-
 on:
-  push:
-    branches:
-      - master
-
+  repository_dispatch:
+    types: [lerna_release]
 jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    if: "! contains(github.event.head_commit.message, '[skip ci]')"
-    steps:
-      - run: echo "${{ github.event.head_commit.message }}"
   release:
-    needs: prepare
     name: Publish
     runs-on: ubuntu-latest
     steps:
@@ -23,14 +14,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12'
-      - run: NODE_ENV=development npm ci
-      - name: versioning
-        run: |
-          NODE_ENV=development npm ci
-          git config --local user.email "nellyk@noreply.github.com"
-          git config --local user.name "nellyk"
-          npm run lerna:version      
+      - run: NODE_ENV=development npm ci 
       - name: Lerna release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run lerna:deploy -- "${{ github.event.head_commit.message }}"
+        run: npm run lerna:publish
