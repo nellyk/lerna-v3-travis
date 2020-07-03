@@ -18,7 +18,7 @@ jobs:
          NODE_ENV=development npm ci
          git config --local user.email "one.amex@aexp.com"
          git config --local user.name "OneAmexBot"
-         npm run lerna:deploy -- "chore(release):"${{ github.event.client_payload.tagversion }}
+         npm run lerna:publish
       - name: Lerna release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
