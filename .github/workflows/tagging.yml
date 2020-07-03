@@ -40,4 +40,4 @@ jobs:
           event_type: "one-app-docker-release"
           client_payload: '{"tagversion": "${{ steps.set_tag_version.outputs.action_tag }}"}'
         env:
-          GITHUB_TOKEN: ${{ secrets.PA_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
