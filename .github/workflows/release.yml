@@ -1,5 +1,10 @@
 name: Release
 on:
+  workflow_dispatch:
+   inputs:
+    tag_version:
+     description: 'Tag version'     
+     required: true
   repository_dispatch:
     types: [lerna_release]
 jobs:
@@ -21,4 +26,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |-
           echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
-          npm run lerna:deploy -- "${{ github.event.client_payload.tagversion }}"
+          npm run lerna:deploy -- "${{ github.event.inputs.tag_version }}"
