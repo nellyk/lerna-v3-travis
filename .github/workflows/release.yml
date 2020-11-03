@@ -14,11 +14,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12'
-      - run: |
-         NODE_ENV=development npm ci
-         git config --local user.email "one.amex@aexp.com"
-         git config --local user.name "OneAmexBot"
-         npm run lerna:publish
+      - run: NODE_ENV=development npm ci
       - name: Lerna release
         env:
           NODE_ENV: production
