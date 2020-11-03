@@ -21,4 +21,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |-
           echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
-          npm run lerna:deploy -- "${{ needs.checkCommit.outputs.commitMsg }}"
+          npm run lerna:deploy -- "${{ github.event.client_payload.tagversion }}"
