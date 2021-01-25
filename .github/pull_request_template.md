@@ -32,5 +32,5 @@
 - [ ] This change adds additional environment variable requirements for Holocron users.
 - [ ] I have added the Apache 2.0 license header to any new files created.
 
-## What is the Impact to Developers Using iguazu?
-<!--- Please describe how your changes impacts developers using iguazu. -->
+## What is the Impact to Developers Using parrot?
+<!--- Please describe how your changes impacts developers using parrot. -->
