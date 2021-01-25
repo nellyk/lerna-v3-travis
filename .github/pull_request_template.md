@@ -32,5 +32,5 @@
 - [ ] This change adds additional environment variable requirements for Holocron users.
 - [ ] I have added the Apache 2.0 license header to any new files created.
 
-## What is the Impact to Developers Using Jest-Image-Snapshot?
-<!--- Please describe how your changes impacts developers using Jest-Image-Snapshot. -->
+## What is the Impact to Developers Using react-albus?
+<!--- Please describe how your changes impacts developers using react-albus. -->
