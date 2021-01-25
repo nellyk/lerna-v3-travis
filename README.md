@@ -1,4 +1,4 @@
-# lerna-v3-travis
+# lerna-v3
 
 testing out travis with lerna v3
 
